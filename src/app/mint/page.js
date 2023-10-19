@@ -96,7 +96,44 @@ export default function Page() {
             />
           </motion.div>
         </div>
-          
+        <div className="flex justify-center pt-20">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.55,
+                duration: 1.35,
+                ease: [0.165, 0.84, 0.44, 1],
+              }}>
+              <Link href="https://discord.gg/syWEHyc7">
+                <Image
+                  src="/discord.png"
+                  alt="discord"
+                  width={50}
+                  height={50}
+                  className='mx-3' />
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.55,
+                duration: 1.35,
+                ease: [0.165, 0.84, 0.44, 1],
+              }}>
+              <Link href="https://twitter.com/ThePsychosisNFT">
+                <Image
+                  src="/twitter.png"
+                  alt="twitter"
+                  width={45}
+                  height={45}
+                  className='mx-3' />
+              </Link>
+            </motion.div>
+          </div>
+
           <div className="flex justify-center pt-10 py-10">
             <div className=' text-white text-center'>
               <p>Copyright@ Psychosis 2023</p>
